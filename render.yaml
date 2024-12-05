@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: projet-shool
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: DATABASE_HOST
+        value: your-database-host
+      - key: DATABASE_USER
+        value: your-database-user
+      - key: DATABASE_PASSWORD
+        value: your-database-password
+      - key: DATABASE_NAME
+        value: your-database-name
